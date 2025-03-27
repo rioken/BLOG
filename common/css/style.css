@@ -145,7 +145,7 @@
         width: 347px;
     }
 
-    .aboutarea ul {
+    /*.aboutarea ul {
         padding: 0;
     }
 
@@ -168,7 +168,7 @@
         border-bottom: 10px solid transparent;
         display: inline-block;
         margin-right: 5px;
-    }
+    }*/
 
     .menulist li {
         padding: 15px 0px;
@@ -183,4 +183,49 @@
     .twitter {
         margin: 20px;
     }
+
+    /*footer_accordion*/
+    /*ベース*/
+.toggle {
+	display: none;
+}
+.Label {		/*タイトル*/
+	padding: 5px;
+	display: block;
+	color: #fff;
+
+}
+.Label::before{		/*タイトル横の矢印*/
+	content:"";
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top:calc( 50% - 3px );
+	right: 20px;
+	transform: rotate(135deg);
+}
+.Label,
+.content {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: all 0.3s;
+}
+.content {		/*本文*/
+	height: 0;
+	margin-bottom:5px;
+	padding:0 20px;
+	overflow: hidden;
+}
+.toggle:checked + .Label + .content {	/*開閉時*/
+	height: auto;
+	padding:20px ;
+	transition: all .3s;
+}
+.toggle:checked + .Label::before {
+	transform: rotate(-45deg) !important;
+}
 }
