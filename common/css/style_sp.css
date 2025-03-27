@@ -75,7 +75,8 @@
     video {
         max-width: 100%;
     }
-/*Menu*/
+
+    /*Menu*/
     .Menuarea {
         width: 90%;
     }
@@ -239,5 +240,12 @@
 
     .toggle:checked+.Label::before {
         transform: rotate(-45deg) !important;
+    }
+
+    .snsarea {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
     }
 }
