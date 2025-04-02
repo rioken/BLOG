@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width:768px) {
+/*@media screen and (min-width:768px) {
 
     /*webここから*/
     h5 {
@@ -101,9 +101,11 @@
     .nursery_school_color1 {
         background-color: #00923A;
     }
+
     .nursery_school_color2 {
         background-color: #fbfb5f;
     }
+
     .nursery_school_color3 {
         background-color: #D8F4F8;
     }
@@ -162,17 +164,10 @@
         padding-bottom: 13px;
     }
 
-    /*.Accordion>li>p {
-        /* 閉じている状態 */
-    /*line-height: 0;
-        opacity: 0;
-        visibility: hidden;
-    }*/
+    @media screen and (max-width: 767px) {
 
-    /*.Accordion.active>li>p {
-        /* 開いている状態 */
-    /*line-height: 1.5;
-        opacity: 1;
-        visibility: visible;
-    }*/
+
+        html {}
+    }
+
 }
