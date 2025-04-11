@@ -1,173 +1,177 @@
 @charset "UTF-8";
-/*@media screen and (min-width:768px) {
-
-    /*webここから*/
-    h5 {
-        margin-top: 80px;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    h5 span {
-        font-size: 11px;
-    }
-
-    h5 span::before {
-        content: "|";
-        font-size: 20px;
-        margin: 0 14px;
-    }
-
-    article {
-        width: 100%;
-    }
-
-    .color_btn {
-        display: flex;
-        align-items: center;
-    }
-
-    .color_btn p {
-        margin-right: 20px;
-    }
-
-    .color_icon {
-        display: inline-block;
-        letter-spacing: normal;
-        width: 16px;
-        height: 16px;
-        border-radius: 16px;
-        margin: 2px;
-        position: relative;
-        cursor: pointer;
-        border: 1px solid #333;
-    }
-
-    /*btn_color*/
-    .leleaf_color1 {
-        background-color: #28361C;
-
-    }
-
-    .leleaf_color2 {
-        background-color: #85976D;
-
-    }
-
-    .leleaf_color3 {
-        background-color: #fff;
-
-    }
-
-    .atelier_color1 {
-        background-color: #5D7F5D;
-    }
-
-    .atelier_color2 {
-        background-color: #3C4858;
-    }
-
-    .atelier_color3 {
-        background-color: #fff;
-    }
-
-    .bloom_color1 {
-        background-color: #432843;
-    }
-
-    .bloom_color2 {
-        background-color: #D5BC8A;
-    }
-
-    .bloom_color3 {
-        background-color: #EEE6EB;
-    }
-
-    .mental_clinic_color1 {
-        background-color: #F7EAED;
-
-    }
-
-    .mental_clinic_color2 {
-        background-color: #FFFAEF;
-
-    }
-
-    .mental_clinic_color3 {
-        background-color: #B49FB5;
-
-    }
-
-    .nursery_school_color1 {
-        background-color: #00923A;
-    }
-
-    .nursery_school_color2 {
-        background-color: #fbfb5f;
-    }
-
-    .nursery_school_color3 {
-        background-color: #D8F4F8;
-    }
-
-    .Label {
-        color: #333;
-        font-weight: bold;
-    }
-
-    .Label::before {
-        border-top: 2px solid #333;
-        border-right: 2px solid #333;
-    }
 
 
-    /*アコーディオンメニューここから*/
+/*webここから*/
+h5 {
+    margin-top: 80px;
+    font-size: 30px;
+    text-align: center;
+}
 
-    .nav-open {
-        font-weight: bold;
-        position: relative;
-        margin-bottom: 10px;
-    }
+h5 span {
+    font-size: 11px;
+}
 
-    .nav-open .active {}
+h5 span::before {
+    content: "|";
+    font-size: 20px;
+    margin: 0 14px;
+}
 
-    .nav-open::before {
-        border-top: 2px solid #333;
-        border-right: 2px solid #333;
-        content: "";
-        width: 6px;
-        height: 6px;
-        -webkit-transform: rotate(45deg);
-        position: absolute;
-        top: calc(50% - 3px);
-        right: 20px;
-        transform: rotate(135deg);
-    }
+article {
+    width: 100%;
+}
 
-    .Accordion {
-        display: none;
-        padding: 0;
-    }
+.pickuparea {
+    margin-bottom: 100px;
+}
 
-    .Accordion>li {
-        width: 350px;
-        padding-top: 0;
-        padding-bottom: 0;
-        line-height: 1.5em;
-        overflow: hidden;
-    }
+.pickup_block {
+    margin-bottom: 100px;
+}
 
-    .Accordion .active>li {
-        /* 開いている状態 */
-        border-top: 1px white solid;
-        padding-top: 13px;
-        padding-bottom: 13px;
-    }
+.color_btn {
+    display: flex;
+    align-items: center;
+}
 
-    @media screen and (max-width: 767px) {
+.color_btn p {
+    margin-right: 20px;
+}
 
+.color_icon {
+    display: inline-block;
+    letter-spacing: normal;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    margin: 2px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #333;
+}
 
-        html {}
-    }
+/*btn_color*/
+.leleaf_color1 {
+    background-color: #28361C;
 
 }
+
+.leleaf_color2 {
+    background-color: #85976D;
+
+}
+
+.leleaf_color3 {
+    background-color: #fff;
+
+}
+
+.atelier_color1 {
+    background-color: #5D7F5D;
+}
+
+.atelier_color2 {
+    background-color: #3C4858;
+}
+
+.atelier_color3 {
+    background-color: #fff;
+}
+
+.bloom_color1 {
+    background-color: #432843;
+}
+
+.bloom_color2 {
+    background-color: #D5BC8A;
+}
+
+.bloom_color3 {
+    background-color: #EEE6EB;
+}
+
+.mental_clinic_color1 {
+    background-color: #F7EAED;
+
+}
+
+.mental_clinic_color2 {
+    background-color: #FFFAEF;
+
+}
+
+.mental_clinic_color3 {
+    background-color: #B49FB5;
+
+}
+
+.nursery_school_color1 {
+    background-color: #00923A;
+}
+
+.nursery_school_color2 {
+    background-color: #fbfb5f;
+}
+
+.nursery_school_color3 {
+    background-color: #D8F4F8;
+}
+
+.nabekan_color1 {
+    background-color: #005497;
+}
+
+.nabekan_color2 {
+    background-color: #fdfd73;
+}
+
+.nabekan_color3 {
+    background-color: #fff;
+}
+
+.fashion_site_color1 {
+    background-color: #050507;
+}
+
+.fashion_site_color2 {
+    background-color: #fff;
+}
+
+.Recruitment_site_color1 {
+    background-color: #ebf8ff;
+}
+
+.Recruitment_site_color2 {
+    background-color: #209ad1;
+}
+
+.Recruitment_site_color3 {
+    background-color: #fff;
+}
+
+/*説明アコーディオンメニューここから*/
+.explanation-open {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.explanation-open::before {
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    content: "";
+    width: 6px;
+    height: 6px;
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 20px;
+    transform: rotate(135deg);
+}
+
+.explanation-open.rotate-45::before {
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {}

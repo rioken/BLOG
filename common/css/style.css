@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@media screen and (min-width:768px) {
-
     html {
         font-size: 100%;
     }
@@ -145,17 +143,257 @@
         width: 347px;
     }
 
-    /*.aboutarea ul {
+    .menulist li {
+        padding: 15px 0px;
+        border-top: 1px solid;
+    }
+
+    .menulist li:last-child {
+        padding: 19px 0px;
+        border-bottom: 1px solid;
+    }
+
+    .menulist li a {
+        color: #fff;
+    }
+
+    .twitter {
+        margin: 20px;
+    }
+
+    /*footer_accordion*/
+    /*ベース*/
+    .toggle {
+        display: none;
+    }
+
+    /*アコーディオンメニューここから*/
+
+    .nav-open {
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+
+    .nav-open::before {
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        content: "";
+        width: 6px;
+        height: 6px;
+        -webkit-transform: rotate(45deg);
+        position: absolute;
+        top: calc(50% - 3px);
+        right: 20px;
+        transform: rotate(135deg);
+    }
+
+    .Accordion {
+        display: none;
         padding: 0;
     }
 
-    .aboutlist li {
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
+    .Accordion>li {
+        width: 350px;
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 1.5em;
+        overflow: hidden;
     }
 
-    .aboutlist li a {
+    .Accordion .active>li {
+        /* 開いている状態 */
+        border-top: 1px white solid;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    /* rotate-45クラスが追加された場合のスタイル */
+
+    .nav-open.rotate-45::before {
+        transform: rotate(-45deg);
+    }
+
+    .snsarea {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+
+/*sp */
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 100%;
+    }
+
+    body {
+        color: #333333;
+        font-size: 1rem;
+        font-family: 'Noto Sans', 'Noto Sans JP';
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }
+
+    p {
+        font-weight: lighter;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 16px;
+        color: #333333;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    .container {
+        max-width: 100%;
+        height: auto;
+        padding: 0 16px;
+    }
+
+    .website {
+        margin-bottom: 20px;
+    }
+
+    .pickuparea {
+        display: flex;
+        column-gap: 23px;
+        margin-top: 44px;
+        flex-direction: column
+    }
+
+    .profilearea img {
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    /*Menu*/
+    .Menuarea {
+        width: 90%;
+    }
+
+    .menulist {
+        padding: 0;
+    }
+
+    .menulist li {
+        padding: 15px 0px;
+        border-top: 1px solid;
+    }
+
+    nav {
+        overflow-x: scroll;
+        background-color: #977a8b;
+        ;
+    }
+
+    .navlist {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .navlist li {
+        color: #fff;
+        margin-right: 60px;
+        padding: 10px 0px;
+    }
+
+    .navlist a {
+        color: #fff;
+    }
+
+    .twocolumnarea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+
+    }
+
+    .leftcolumnarea {
+        width: 100%;
+    }
+
+    .leftcolumnarea {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .rightcolumnarea {
+
+        width: 100%;
+    }
+
+    .readmore {
+        font-size: 16px;
+        font-weight: 100;
+        border-bottom: 1px solid;
+        width: 100px;
+        margin: 0 auto;
+        background: #333;
+        padding: 5px;
+        color: #fff;
+        text-align: center;
+    }
+
+    /*footer*/
+    .footerarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #977a8b;
+        color: #fff;
+    }
+
+    .aboutlist {
+        padding: 0;
+    }
+
+    .triangle {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .triangle a {
         color: #fff;
     }
 
@@ -168,20 +406,10 @@
         border-bottom: 10px solid transparent;
         display: inline-block;
         margin-right: 5px;
-    }*/
 
-    .menulist li {
-        padding: 15px 0px;
-        border-top: 1px solid;
-    }
-
-    .menulist li:last-child {
-        padding: 19px 0px;
-        border-bottom: 1px solid;
-    }
-
-    .twitter {
-        margin: 20px;
+        .menulist {
+            padding: 0;
+        }
     }
 
     /*footer_accordion*/
