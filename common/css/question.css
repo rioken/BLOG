@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*step_area*/
+.qeestion-open {
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 30px;
+}
+
+/* タイトル横のプラスマーク縦線 */
+.qeestion-open::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -30px;
+    width: 20px;
+    height: 2px;
+    background-color: #977a8b;
+    transform: rotate(90deg);
+    transition: all .3s ease-in-out;
+}
+
+/* タイトル横のプラスマーク横線 */
+.qeestion-open::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -30px;
+    width: 20px;
+    height: 2px;
+    background-color: #977a8b;
+    transition: all .3s ease-in-out;
+}
+
+/* アコーディオンが開いたとき縦線の変化 */
+.rotate180::before {
+    transform: rotate(180deg);
+}
+
+.qeestion>li {
+    width: 90%;
+}
+.qeestion>li>p {
+    color: #525252;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+    .qeestion>li {
+        width: 100%;
+    }
+}
