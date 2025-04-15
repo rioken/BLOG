@@ -1,9 +1,10 @@
 //アコーディオン
 $(function () {
     //クリックで動く
-    $('.nav-open,.explanation-open').click(function () {
+    $('.nav-open,.explanation-open,.qeestion-open').click(function () {
         $(this).toggleClass('active');
         $(this).toggleClass('rotate-45'); // クリックでrotate-45クラスをトグル
+        $(this).toggleClass('rotate180');
         $(this).next('.Accordion').slideToggle();
     });
 });
@@ -69,8 +70,8 @@ const content = `<footer class="footerarea">
                 <li><a href="web.html">Web</a></li>
                 <li><a href="">Movie</a></li>
                 <li><a href="">Dtp</a></li>
-                <li><a href="">Q&A</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="question.html">Q&A</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <div class="footerbox twitterarea">
@@ -103,10 +104,10 @@ const headercontent = `<header>
                 <li><a href="#">
                         Dtp</a>
                 </li>
-                <li><a href="#">
+                <li><a href="question.html">
                         Q&A</a>
                 </li>
-                <li><a href="">
+                <li><a href="contact.html">
                         CONTACT</a>
                 </li>
             </ul>
