@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" href="common/css/web.css">
+    <link rel="stylesheet" href="common/css/contact.css">
+    <link rel="icon" href="common/img/favicon.ico">
+    <title>bportfolio</title>
+</head>
+
+<body>
+    <!--header_insertAdjacentHTML-->
+    <div id="header"></div>
+    <!--main-->
+    <main class="container">
+        <h5>CONTCT<span>お問合せ</span></h5>
+        <!--step-->
+        <div class="step_area">
+            <div class="step_block">
+                <p>STEP1<br>
+                    フォーム入力</p>
+            </div>
+            <div class="step_block">
+                <p>STEP2<br>
+                    入力内容確認</p>
+            </div>
+            <div class="step_block">
+                <p>STEP3<br>
+                    お問合せ完了</p>
+            </div>
+        </div>
+        <!--form-->
+        <form>
+            <dl class="form_area">
+                <label for="office">
+                    <dt><h2>会社名
+                    </h2> <p>必須</p></dt>
+                    <dd><input type="text" id="name" name="name"required placeholder="例）株式会社ｘｘｘｘｘｘｘｘ"></dd>
+                </label>
+                <label for="office">
+                    <dt><h2>担当者名
+                    </h2> <p>必須</p></dt>
+                    <dd><input type="text" id="name" name="name"required placeholder="例）山田　太郎"></dd>
+                </label>
+                <label for="office">
+                    <dt><h2>メールアドレス
+                    </h2>  <p>必須</p></dt>
+                    <dd><input type="email" id="email" name="email"required placeholder="例）xxxxxxx@.co.jp"></dd>
+                </label>
+                <label for="text" class="textarea">
+                    <dt><h2>その他
+                    </h2></dt>
+                    <dd><textarea name="textarea" id="textarea" placeholder="その他ご質問等あればご記入ください"></textarea></dd>
+                </label>
+            </div>
+            <div class="submit_btn"><button type="submit"><p>送信する</p></button></div>
+        </form>
+    </main>
+    <!-- -footer_insertAdjacentHTML -->
+    <div id="footer"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="common/js/script.js"></script>
+</body>
+
+</html>
