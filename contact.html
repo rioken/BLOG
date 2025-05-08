@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="common/css/web.css">
     <link rel="stylesheet" href="common/css/contact.css">
     <link rel="icon" href="common/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>bportfolio</title>
 </head>
 
@@ -19,50 +20,88 @@
         <h5>CONTCT<span>お問合せ</span></h5>
         <!--step-->
         <div class="step_area">
-            <div class="step_block">
-                <p>STEP1<br>
-                    フォーム入力</p>
+            <div class="step_block step1">
+                STEP1<br>
+                    フォーム入力
             </div>
-            <div class="step_block">
+            <div class="step_block step2">
                 <p>STEP2<br>
                     入力内容確認</p>
             </div>
-            <div class="step_block">
+            <div class="step_block step3">
                 <p>STEP3<br>
                     お問合せ完了</p>
             </div>
         </div>
+        <!-- 送信完了画面 -->
+        <div class="submit_screen">
+            <h2>送信しました。(※テストページの為送信はされません)</h2>
+        </div>
         <!--form-->
-        <form>
-            <dl class="form_area">
-                <label for="office">
-                    <dt><h2>会社名
-                    </h2> <p>必須</p></dt>
-                    <dd><input type="text" id="name" name="name"required placeholder="例）株式会社ｘｘｘｘｘｘｘｘ"></dd>
-                </label>
-                <label for="office">
-                    <dt><h2>担当者名
-                    </h2> <p>必須</p></dt>
-                    <dd><input type="text" id="name" name="name"required placeholder="例）山田　太郎"></dd>
-                </label>
-                <label for="office">
-                    <dt><h2>メールアドレス
-                    </h2>  <p>必須</p></dt>
-                    <dd><input type="email" id="email" name="email"required placeholder="例）xxxxxxx@.co.jp"></dd>
-                </label>
-                <label for="text" class="textarea">
-                    <dt><h2>その他
-                    </h2></dt>
-                    <dd><textarea name="textarea" id="textarea" placeholder="その他ご質問等あればご記入ください"></textarea></dd>
-                </label>
+        <!-- 確認画面 -->
+        <div class="confirmation_screen">
+            <h2>以下の内容で送信します。よろしいですか？</h2>
+            <ul>
+                <li><strong>会社名:</strong> <span id="confirm_office"></span></li>
+                <li><strong>担当者名:</strong> <span id="confirm_name"></span></li>
+                <li><strong>メールアドレス:</strong> <span id="confirm_email"></span></li>
+                <li><strong>お問い合わせ内容:</strong> <span id="confirm_message"></span></li>
+            </ul>
+            <div class="btn_list">
+                <button id="send_btn">送信する</button>
+                <button id="return_btn">戻る</button>
             </div>
-            <div class="submit_btn"><button type="submit"><p>送信する</p></button></div>
-        </form>
+        </div>
+        <!--form-->
+        <div class="form_wrapper">
+            <form class="contact_form">
+                <dl class="form_area">
+                    <label for="office">
+                        <dt>
+                            <h2>会社名
+                            </h2>
+                            <p>必須</p>
+                        </dt>
+                        <dd><input type="text" id="office" name="office" required placeholder="例）株式会社ｘｘｘｘｘｘｘｘ"
+                                autocomplete="organization"></dd>
+                    </label>
+                    <label for="name">
+                        <dt>
+                            <h2>担当者名
+                            </h2>
+                            <p>必須</p>
+                        </dt>
+                        <dd><input type="text" id="name" name="name" required placeholder="例）山田　太郎" autocomplete="name">
+                        </dd>
+                    </label>
+                    <label for="email">
+                        <dt>
+                            <h2>メールアドレス
+                            </h2>
+                            <p>必須</p>
+                        </dt>
+                        <dd><input type="email" id="email" name="email" required placeholder="例）xxxxxxx@.co.jp"
+                                autocomplete="email"></dd>
+                    </label>
+                    <label for="textarea" class="textarea">
+                        <dt>
+                            <h2>その他
+                            </h2>
+                        </dt>
+                        <dd><textarea name="textarea" id="textarea" placeholder="その他ご質問等あればご記入ください"
+                                autocomplete="on"></textarea></dd>
+                    </label>
+
+                    <div><button id="submit_btn" type="submit" value="送信する">
+                            内容を確認する
+                        </button></div>
+            </form>
+        </div>
     </main>
     <!-- -footer_insertAdjacentHTML -->
     <div id="footer"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="common/js/script.js"></script>
+    <script src="common/js/contact.js"></script>
 </body>
 
 </html>
