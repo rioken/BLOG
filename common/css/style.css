@@ -97,6 +97,9 @@ nav {
     background: #333;
     padding: 10px;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*twocolumnarea*/
