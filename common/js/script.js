@@ -68,7 +68,7 @@ const content = `<footer class="footerarea">
             <h3>Menu</h3>
             <ul class="menulist">
                 <li><a href="web.html">Web</a></li>
-                <li><a href="">Movie</a></li>
+                <li><a href="movie.html">Movie</a></li>
                 <li><a href="">Dtp</a></li>
                 <li><a href="question.html">Q&A</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
@@ -89,6 +89,7 @@ footer.insertAdjacentHTML('afterbegin', content)// insertAdjacentHTML メソッ�
 const header = document.querySelector('#header');//IDheaderのdivを関数headerにいれている
 //メソッドに1つめの引数を正しく渡す
 const headercontent = `<header>
+      <h1>
         <a href="index.html">
             <h1><img src="common/img/portfolio.svg" style="max-width: 145px; height: auto;">
         </a>
@@ -98,7 +99,7 @@ const headercontent = `<header>
                 <li><a href="web.html">
                         Web</a>
                 </li>
-                <li><a href="#">
+                <li><a href="movie.html">
                         Movie</a>
                 </li>
                 <li><a href="#">
