@@ -9,6 +9,7 @@ $(function () {
     });
 });
 
+//insertAdjacentHTMLはリンクはこちらに設定
 //insertAdjacentHTMLでfooter.htmlのfooterを呼び出す
 const footer = document.querySelector('#footer');//IDfooterのdivを関数footerにいれている
 //メソッドに1つめの引数を正しく渡す
@@ -69,7 +70,7 @@ const content = `<footer class="footerarea">
             <ul class="menulist">
                 <li><a href="web.html">Web</a></li>
                 <li><a href="movie.html">Movie</a></li>
-                <li><a href="">Dtp</a></li>
+                <li><a href="dtp.html">Dtp</a></li>
                 <li><a href="question.html">Q&A</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -102,7 +103,7 @@ const headercontent = `<header>
                 <li><a href="movie.html">
                         Movie</a>
                 </li>
-                <li><a href="#">
+                <li><a href="dtp.html">
                         Dtp</a>
                 </li>
                 <li><a href="question.html">
