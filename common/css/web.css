@@ -173,4 +173,49 @@ article {
 .explanation-open.rotate-45::before {
     transform: rotate(-45deg);
 }
+/* ■モーダル全体のスタイル■拡大縮小スタイル */
+ /* モーダル全体 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* 最前面に表示 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 画面全体の幅を使用 */
+    height: 100%; /* 画面全体の高さを使用 */
+    background-color: rgba(0, 0, 0, 0.8); /* 背景を半透明の黒に設定 */
+    overflow: auto; /* 画像が背景を超えた場合にスクロール可能にする */
+}
 
+.close {
+    position: absolute;
+    top: 10px; /* モーダル背景上部の10pxに配置 */
+    right: 20px; /* モーダル背景の右側に配置 */
+    color: white; /* 閉じるボタンの文字色 */
+    font-size: 24px; /* サイズ調整 */
+    font-weight: bold;
+    cursor: pointer; /* カーソルをポインタに変更 */
+    z-index: 1100; /* 他要素より前面に表示 */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* 最大幅80% */
+    max-height: none; /* 高さ制約なし（スクロール可能にする） */
+    transition: transform 0.3s ease; /* 拡大縮小のスムーズな変化 */
+    cursor: zoom-in; /* 拡大可能アイコン表示 */
+}
+
+.modal-content.zoomed {
+    max-width: 80%; /* 拡大時も最大幅80%を維持 */
+    width: auto; /* 拡大時の幅は画像に応じる */
+    height: auto; /* 拡大時の高さは画像に応じる */
+    transform: scale(1.2); /* 適度に拡大する倍率 */
+    cursor: zoom-out; /* 縮小可能アイコン表示 */
+}
+/* モーダルが表示されている間、背景スクロールを固定 */
+.body-fixed {
+    overflow: hidden; /* スクロールバーを無効化 */
+    height: 100%;     /* ページ全体を表示範囲に収める */
+}
