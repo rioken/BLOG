@@ -8,7 +8,6 @@ $(function () {
         $(this).next('.Accordion').slideToggle();
     });
 });
-
 //insertAdjacentHTMLはリンクはこちらに設定
 //insertAdjacentHTMLでfooter.htmlのfooterを呼び出す
 const footer = document.querySelector('#footer');//IDfooterのdivを関数footerにいれている
@@ -116,3 +115,48 @@ const headercontent = `<header>
         </nav>
     </header>`;
 header.insertAdjacentHTML('afterbegin', headercontent)// insertAdjacentHTML メソッドに2つめの引数を正しく渡す
+
+// ■モーダルウィンドウ
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('imageModal'); // モーダル全体
+    const modalImg = document.getElementById('modalImage'); // モーダル内画像
+    const closeBtn = document.querySelector('.close'); // 閉じるボタン
+    const banners = document.querySelectorAll('.banner'); // 各バナー要素
+    const body = document.body; // 背景スクロール固定用
+
+    // モーダルを開く処理
+    banners.forEach(function (banner) {
+        banner.addEventListener('click', function (event) {
+            event.preventDefault(); // デフォルトのリンク動作を無効化
+            const fullImageUrl = banner.getAttribute('data-full'); // 画像URLを取得
+            modal.style.display = 'block'; // モーダルを表示
+            modalImg.src = fullImageUrl; // モーダル画像を設定
+            body.classList.add('body-fixed'); // 背景スクロールを固定
+        });
+    });
+
+    // モーダル内画像の拡大／縮小機能
+    modalImg.addEventListener('click', function () {
+        if (modalImg.classList.contains('zoomed')) {
+            modalImg.classList.remove('zoomed'); // 拡大解除（縮小）
+        } else {
+            modalImg.classList.add('zoomed'); // 拡大する
+        }
+    });
+
+    // モーダルを閉じる処理（閉じるボタン ×）
+    closeBtn.addEventListener('click', function () {
+        modal.style.display = 'none'; // モーダルを非表示にする
+        modalImg.classList.remove('zoomed'); // 拡大状態をリセット
+        body.classList.remove('body-fixed'); // 背景スクロールを元に戻す
+    });
+
+    // モーダルの背景クリックで閉じる処理
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) { // 背景部分がクリックされた場合のみ処理を実行
+            modal.style.display = 'none'; // モーダルを非表示にする
+            modalImg.classList.remove('zoomed'); // 拡大状態をリセット
+            body.classList.remove('body-fixed'); // 背景スクロールを元に戻す
+        }
+    });
+});
