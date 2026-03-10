@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="common/css/style.css">
-    <!--link rel="stylesheet" href="common/css/style_sp.css"-->
+    <link rel="stylesheet" href="common/css/style_sp.css">
     <link rel="stylesheet" href="common/css/web.css">
     <link rel="icon" href="common/img/favicon.ico">
     <title>bportfolio</title>
@@ -230,7 +230,7 @@
                         </ul>
                     </div>
                 </article>
-                <!--pickup3_fashion_site_-->
+                <!--pickup3_recruit_site_-->
                 <article class="website">
                     <a href="https://www.paramount-careservice.jp/recruit/details/" target="_blank"><img
                             src="common/img/paramount-careservice.jp.jpg" alt=""></a>
@@ -273,8 +273,10 @@
             <div class="pickuparea">
                 <!--pickup1_mental_clinic-->
                 <article class="website">
-                    <a href="https://xd.adobe.com/view/8746b56b-1f68-4c11-8543-cbdb2053ea99-d215/" target="_blank"><img
-                            src="common/img/web/web_design1.png" alt="" width=""></a>
+                    <!-- サムネイル画像としてバナー -->
+                    <a href="#" class="banner" data-full="common/img/web/clinic.png">
+                        <img src="common/img/web/web_design1.png" alt="メンタルクリニックサイト" width="">
+                    </a>
                     <h2>
                         メンタルクリニックサイト
                         <div class="color_btn">
@@ -313,10 +315,17 @@
                         </ul>
                     </div>
                 </article>
+                <!-- モーダル部分 -->
+                <div id="imageModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImage" alt="拡大画像">
+                </div>
                 <!--pickup2_nursery_school-->
                 <article class="website">
-                    <a href="https://xd.adobe.com/view/1f378ed9-c60e-4123-97ef-cbcabf569861-4a64/" target="_blank"><img
-                            src="common/img/web/web_design2.png" alt=""></a>
+                    <!-- サムネイル画像としてバナー -->
+                    <a href="#" class="banner" data-full="common/img/web/nursery_school.jpg">
+                        <img src="common/img/web/web_design2.png" alt="保育園サイト" width="">
+                    </a>
                     <h2>
                         保育園サイト
                         <div class="color_btn">
@@ -355,6 +364,11 @@
                         </ul>
                     </div>
                 </article>
+                     <!-- モーダル部分 -->
+                <div id="imageModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImage" alt="拡大画像">
+                </div>
                 <!--pickup3_-->
                 <article class="website">
                     <img src="https://placehold.jp/30px/c9c9c9/ffffff/340x246.png?text=coming%20soon" alt="">
@@ -404,10 +418,10 @@
             <div class="pickuparea">
                 <!--pickup1_mental_clinic-->
                 <article class="website">
-                    <a href="https://rioken.github.io/kanji/" target="_blank"><img
-                            src="common/img/web/kanjiapp.png" alt="漢字筆順アプリ" width=""></a>
+                    <a href="https://rioken.github.io/kanji/" target="_blank"><img src="common/img/web/kanjiapp.png"
+                            alt="漢字筆順アプリ" width=""></a>
                     <h2>
-                       漢字筆順アプリ
+                        漢字筆順アプリ
                     </h2>
                     <!--アコーディオンメニュー-->
                     <div>
@@ -440,7 +454,8 @@
                 </article>
                 <!--pickup2_nursery_school-->
                 <article class="website">
-                    <a href="https://rioken.github.io/calculator/" target="_blank"><img src="common/img/web/calculatorapp.png" alt="電卓アプリ"></a>
+                    <a href="https://rioken.github.io/calculator/" target="_blank"><img
+                            src="common/img/web/calculatorapp.png" alt="電卓アプリ"></a>
                     <h2>
                         電卓アプリ
                     </h2>
